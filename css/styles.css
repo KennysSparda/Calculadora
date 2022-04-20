@@ -1,0 +1,48 @@
+body {
+background: Black;
+color: White;
+}
+
+#MainForm {
+  border: 5px inset DarkGray;
+  border-radius: 10px;
+  margin: 10% auto;
+  height: 300px;
+  width: 200px;
+}
+
+#Title {
+  text-align: center;
+  padding: 1px;
+  font: 15px;
+  background: #212121;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+#Display {
+  margin-top: 10px;
+  margin-left: 20%;
+  height: 30px;
+  width: 60%;
+}
+
+table {
+  padding: 10px auto;
+  margin: 0px auto;
+}
+
+.button {
+  border: 2px inset DarkGray;
+  border-radius: 10px;
+  font-size: 18px;
+  background: Black;
+  color: Gray;
+  height: 40px;
+  width: 40px;
+}
+
+.button:hover {
+  background: Gray;
+}
