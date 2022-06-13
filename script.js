@@ -14,50 +14,16 @@ function limpa() {
   operando = Display3.value;
 }
 
-function FazerContaDe(operador) {
-  Display3.value = operador;
-  operando = Display3.value;
-  if (Display1.value == "") {
-    Display1.value = Display2.value;
-    Display2.value = "";
-  } else if (Display2.value == ""){
-        Display3.value = operador;
-  } else {
-    if (operando == '+') {
-      Display1.value = (parseFloat(Display1.value)+parseFloat(Display2.value)).toFixed(6);
-      Display2.value = "";
-      Display3.value = "";
-      operando = Display3.value;
-    } else if (operando == '-') {
-      Display1.value = (parseFloat(Display1.value)+parseFloat(Display2.value)).toFixed(6);
-      Display2.value = "";
-      Display3.value = "";
-      operando = Display3.value;
-    } else if (operando == '*') {
-      Display1.value = (parseFloat(Display1.value)+parseFloat(Display2.value)).toFixed(6);
-      Display2.value = "";
-      Display3.value = "";
-      operando = Display3.value;
-    } else if (operando == '/') {
-      Display1.value = (parseFloat(Display1.value)+parseFloat(Display2.value)).toFixed(6);
-      Display2.value = "";
-      Display3.value = "";
-      operando = Display3.value;
-    }
-  }
-}
-
-
 function soma() {
   Display3.value = '+';
   operando = Display3.value;
   if (Display1.value == "") {
     Display1.value = Display2.value;
     Display2.value = "";
-  } else if (Display2.value == ""){
-        Display3.value = "+";
+  } else if (Display2.value == "") {
+    Display3.value = "+";
   } else {
-    Display1.value = (parseFloat(Display1.value)+parseFloat(Display2.value)).toFixed(6);
+    Display1.value = (parseFloat(Display1.value) + parseFloat(Display2.value)).toFixed(6);
     Display2.value = "";
   }
 }
@@ -69,10 +35,10 @@ function subtrai() {
     Display1.value = Display2.value;
     Display2.value = "";
     Display3.value = "-";
-  } else if (Display2.value == ""){
+  } else if (Display2.value == "") {
     Display3.value = "-";
   } else {
-    Display1.value = (parseFloat(Display1.value)-parseFloat(Display2.value)).toFixed(6);
+    Display1.value = (parseFloat(Display1.value) - parseFloat(Display2.value)).toFixed(6);
     Display2.value = "";
   }
 }
@@ -87,7 +53,7 @@ function mult() {
   } else if (Display2.value == "") {
     Display3.value = "x";
   } else {
-    Display1.value = (parseFloat(Display1.value)*parseFloat(Display2.value)).toFixed(6);
+    Display1.value = (parseFloat(Display1.value) * parseFloat(Display2.value)).toFixed(6);
     Display2.value = "";
   }
 }
@@ -98,10 +64,10 @@ function divide() {
     Display1.value = Display2.value;
     Display2.value = "";
     Display3.value = "/";
-  } else if (Display2.value == ""){
+  } else if (Display2.value == "") {
     Display3.value = "/";
   } else {
-    Display1.value = (parseFloat(Display1.value)/parseFloat(Display2.value)).toFixed(6);
+    Display1.value = (parseFloat(Display1.value) / parseFloat(Display2.value)).toFixed(6);
     Display2.value = "";
   }
 }
